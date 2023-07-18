@@ -11,9 +11,8 @@
 		3580AF692A667EC200DC28F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580AF682A667EC200DC28F7 /* ContentView.swift */; };
 		3580AF6B2A667EC400DC28F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3580AF6A2A667EC400DC28F7 /* Assets.xcassets */; };
 		3580AF6E2A667EC400DC28F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3580AF6D2A667EC400DC28F7 /* Preview Assets.xcassets */; };
-		3580AF782A667EC400DC28F7 /* AppleLoginPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580AF772A667EC400DC28F7 /* AppleLoginPracticeTests.swift */; };
-		3580AF822A667EC400DC28F7 /* AppleLoginPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580AF812A667EC400DC28F7 /* AppleLoginPracticeUITests.swift */; };
-		3580AF842A667EC400DC28F7 /* AppleLoginPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580AF832A667EC400DC28F7 /* AppleLoginPracticeUITestsLaunchTests.swift */; };
+		3580AF9D2A66F67300DC28F7 /* AppleLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580AF9C2A66F67300DC28F7 /* AppleLoginModel.swift */; };
+		3580AFA02A66F6BB00DC28F7 /* AppleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580AF9F2A66F6BB00DC28F7 /* AppleLoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +39,10 @@
 		3580AF6A2A667EC400DC28F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3580AF6D2A667EC400DC28F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3580AF732A667EC400DC28F7 /* AppleLoginPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleLoginPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3580AF772A667EC400DC28F7 /* AppleLoginPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginPracticeTests.swift; sourceTree = "<group>"; };
 		3580AF7D2A667EC400DC28F7 /* AppleLoginPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleLoginPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3580AF812A667EC400DC28F7 /* AppleLoginPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginPracticeUITests.swift; sourceTree = "<group>"; };
-		3580AF832A667EC400DC28F7 /* AppleLoginPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3580AF902A667F2F00DC28F7 /* AppleLoginPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleLoginPractice.entitlements; sourceTree = "<group>"; };
+		3580AF9C2A66F67300DC28F7 /* AppleLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginModel.swift; sourceTree = "<group>"; };
+		3580AF9F2A66F6BB00DC28F7 /* AppleLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				3580AF652A667EC200DC28F7 /* AppleLoginPractice */,
-				3580AF762A667EC400DC28F7 /* AppleLoginPracticeTests */,
-				3580AF802A667EC400DC28F7 /* AppleLoginPracticeUITests */,
 				3580AF642A667EC200DC28F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +93,9 @@
 			children = (
 				3580AF902A667F2F00DC28F7 /* AppleLoginPractice.entitlements */,
 				3580AF662A667EC200DC28F7 /* AppleLoginPracticeApp.swift */,
-				3580AF682A667EC200DC28F7 /* ContentView.swift */,
+				3580AF9B2A66F64800DC28F7 /* Model */,
+				3580AF9A2A66F63000DC28F7 /* View */,
+				3580AF9E2A66F69800DC28F7 /* ViewModel */,
 				3580AF6A2A667EC400DC28F7 /* Assets.xcassets */,
 				3580AF6C2A667EC400DC28F7 /* Preview Content */,
 			);
@@ -112,21 +110,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3580AF762A667EC400DC28F7 /* AppleLoginPracticeTests */ = {
+		3580AF9A2A66F63000DC28F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3580AF772A667EC400DC28F7 /* AppleLoginPracticeTests.swift */,
+				3580AF682A667EC200DC28F7 /* ContentView.swift */,
 			);
-			path = AppleLoginPracticeTests;
+			path = View;
 			sourceTree = "<group>";
 		};
-		3580AF802A667EC400DC28F7 /* AppleLoginPracticeUITests */ = {
+		3580AF9B2A66F64800DC28F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3580AF812A667EC400DC28F7 /* AppleLoginPracticeUITests.swift */,
-				3580AF832A667EC400DC28F7 /* AppleLoginPracticeUITestsLaunchTests.swift */,
+				3580AF9C2A66F67300DC28F7 /* AppleLoginModel.swift */,
 			);
-			path = AppleLoginPracticeUITests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3580AF9E2A66F69800DC28F7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3580AF9F2A66F6BB00DC28F7 /* AppleLoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3580AF9D2A66F67300DC28F7 /* AppleLoginModel.swift in Sources */,
 				3580AF692A667EC200DC28F7 /* ContentView.swift in Sources */,
 				3580AF672A667EC200DC28F7 /* AppleLoginPracticeApp.swift in Sources */,
+				3580AFA02A66F6BB00DC28F7 /* AppleLoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3580AF782A667EC400DC28F7 /* AppleLoginPracticeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3580AF842A667EC400DC28F7 /* AppleLoginPracticeUITestsLaunchTests.swift in Sources */,
-				3580AF822A667EC400DC28F7 /* AppleLoginPracticeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
